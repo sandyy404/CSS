@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>GYM Khana</title>
+   <link rel="stylesheet" href="css/style.css">
+   <style>
+      * {
+         box-sizing: border-box;
+      }
+
+      body {
+         font-family: Georgia, 'Times New Roman', Times, serif;
+         margin: 0px;
+         padding: 0px;
+         background-image: url('img/image1.jpg');
+         height: 2100px;
+         width: 100%;
+         background-repeat: no-repeat;
+         background-size: cover;
+         color: aliceblue;
+         overflow-x: hidden;
+
+      }
+
+      .left {
+         position: absolute;
+         top: 18px;
+         left: 10px;
+         display: inline-block;
+         border: 0px solid purple;
+         font-size: 22px;
+         /* color:antiquewhite */
+      }
+
+      .center {
+         display: flex;
+         justify-content: center;
+         width: 60%;
+         margin: 24px auto;
+         border: 0px solid gray;
+         overflow-x: auto;
+      }
+
+      .center::-webkit-scrollbar {
+         display: none;
+      }
+
+      .center {
+         -ms-overflow-style: none;
+         /* IE and Edge */
+         scrollbar-width: none;
+         /* Firefox */
+      }
+
+
+      .right {
+         position: absolute;
+         top: 26px;
+         right: 10px;
+         display: inline-block;
+         border: 0px solid rgb(59, 112, 59);
+         color: rgb(8, 8, 8);
+         font-size: 22px;
+
+      }
+
+      .navbar {
+         display: inline-block;
+         padding: 0;
+         margin: 0;
+         list-style: none;
+         flex-wrap: wrap;
+      }
+
+      .navbar li {
+         display: inline-block;
+         margin: 10px;
+         font-size: 22px;
+         white-space: nowrap;
+      }
+
+      .navbar li a {
+         color: aqua;
+         text-decoration: none;
+         padding: 25px 20px;
+         /* box-sizing: border-box; */
+
+      }
+
+      .navbar li a:hover {
+         text-decoration: underline;
+         color: darkkhaki;
+      }
+
+      .left img {
+         position: absolute;
+         left: 25px;
+         top: 10px;
+         border-radius: 10px;
+         width: 52px;
+         /* text-align: center; */
+         /* text-size-adjust: 5px; */
+         /* padding: 2px 0px 0px 0px; */
+         /* margin:5px; */
+         /* filter:blur(50%); */
+      }
+
+      .logo {
+         width: 107px;
+         padding: 0px;
+         position: absolute;
+         text-align: center;
+         top: 62px;
+         left: 1px;
+      }
+
+      .btn {
+         font-family: Georgia, 'Times New Roman', Times, serif;
+         background-color: #3c575c;
+         border: 1.5px solid rgb(243, 236, 243);
+         ;
+         border-radius: 20px;
+         margin: 0px 10px;
+         padding: 10px 22px;
+         font-size: 16px;
+         /* text-decoration: underline; */
+      }
+
+      .btn:hover {
+         background-color: rgb(99, 93, 20);
+
+         cursor: pointer;
+         text-decoration: underline;
+      }
+
+      .container {
+         /* border: 2px solid white; */
+         margin: 117px 23px;
+         padding: 11px 40px;
+         width: 29%;
+         border-radius: 3px;
+      }
+      .container p{
+         font-size: 20px;;
+      }
+   </style>
+</head>
+<!-- https://preview.colorlib.com/#academia    yhi banana hai-->
+
+<body>
+   <!-- <img src="img/LOGO.png" alt="Gym Khana width="200px" > -->
+   <header class="header">
+      <div class="left">
+         <img src="img/Logo.png" alt="">
+         <div class="logo">
+            Gym Khana
+         </div>
+      </div>
+      <div class="center">
+         <ul class="navbar">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">All Courses</a></li>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Pricing</a></li>
+            <li><a href="#">Contact us</a></li>
+         </ul>
+      </div>
+      <div class="right">
+         <button class="btn">
+            Login
+         </button>
+         <button class="btn">
+            Sign Up
+         </button>
+
+      </div>
+      <div class="container">
+         <h1>Welcome to Gym Khana!</h1>
+         <p>Your fitness journey starts here.</p>
+      </div>
+   </header>
+</body>
+
+</html>
