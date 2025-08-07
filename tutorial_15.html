@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Flexbox</title>
+   <style>
+      .container {
+         height: 500px;
+         width: 100%;
+         border: 3px solid purple;
+         border-radius: 5px;
+         display: flex;
+         flex-wrap: wrap;
+
+         /* flex properties for flex container */
+
+         /* flex-wrap: wrap-reverse; */
+         flex-direction: row;
+         /* properties of felxbox */
+         /*
+      flex-direction: column;
+      flex-direction: column-reverse;
+      flex-direction: row-reverse; */
+
+         /* flex-flow:row wrap-reverse; */
+         /* justify-content */
+         /* justify-content: center;
+         justify-content: space-between;
+         justify-content: space-around;
+         justify-content: space-evenly; */
+
+         /* align-items */
+         /* align-items:center; */
+         align-items: stretch;
+      }
+
+      .item {
+         width: 200px;
+         height: 200px;
+         border: 3px solid tomato;
+         padding: 4px;
+         margin: 5px;
+         background-color: #0c571c;
+ }
+     #item-1{
+      /* flex properties for flex items  */
+      order:5;
+      /* flex-grow:4 ;
+      flex-shrink: 4; */
+     }
+     
+     #item-2{
+      /* flex-basis: 250px; */
+      order: 9;
+      /* flex-grow:5;
+      flex-shrink: 5; */
+     }
+     
+     #item-3{
+      order:3;
+     }
+   </style>
+</head>
+
+<body>
+   <h3>
+      This is a flexbox tutorial. It is a part of the CSS series.
+   </h3>
+   <div class="container">
+      <div class="item" id="item-1">First box</div>
+      <div class="item" id="item-2">Second box</div>
+      <div class="item" id="item-3">Third box</div>
+      <!-- <div class="item" id="item-4">Fourth box</div>
+      <div class="item" id="item-5">Fifth box</div>
+      <div class="item" id="item-6">Sixth box</div> -->
+   </div>
+</body>
+
+</html>

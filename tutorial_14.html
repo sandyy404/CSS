@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>z-index</title>
+   <style>
+      .box{
+         width:250px;
+         height:150px;
+         border:2px solid purple;
+
+      }
+      #box1{
+         position: relative;
+         top:35px;
+         z-index:40;
+         background-color:aqua;
+      }
+     #box2{
+      position:relative;
+      top:50px;
+      z-index:4;
+      /* display:none;
+      visibility: hidden; */
+      background-color: #2c0909;
+     }
+     #box3{
+      background-color: #f201aa;
+     }
+     #box4{
+      background-color: #5c06fd;
+     }
+   </style>
+</head>
+<body>
+   <div class="box" id="box1"></div>
+   <div class="box" id="box2"></div>
+   <div class="box" id="box3"></div>
+   <div class="box" id="box4"></div>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Position Prop</title>
+   <style>
+      .container {
+         background-color: #c5aeae;
+         height:5000px;
+      }
+      .box {
+         display: inline-block;
+         width: 100px;
+         height: 100px;
+         margin: 5px;
+         border: 2px solid rgb(104, 36, 104);
+      }
+      #dabba4{
+         /* position:sticky; */
+         /* top:0px; */
+         position:fixed;
+         top:10px;
+
+      right:10px;
+         bottom:100px;
+
+      }
+      #dabba3{
+         position:sticky; 
+          top:0px;
+         /* position:fixed;
+         top:10px;
+         right:10px; */
+
+      }
+   </style>
+</head>
+
+<body>
+   <div class="container">
+   <div class="box" id="dabba">1</div>
+   <div class="box" id="dabba2">2</div>
+   <div class="box" id="dabba3">3</div>
+   <div class="box" id="dabba4">4</div>
+   <div class="box" id="dabba5">5</div>
+   </div>
+</body>
+
+</html>

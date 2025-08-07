@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Alignment</title>
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Tangerine">
+    
+   <style>
+      *{
+         box-sizing: border-box;
+      }
+      
+         body {
+
+           font-family: 'Tangerine', serif;
+        font-size: 23px;
+
+         }
+     
+
+      .container {
+         width: 800px;
+         border: 6px solid rgb(209, 46, 46);
+         border-radius: 4px;
+         margin: 30px auto;
+background-color: #897088;
+      }
+
+      #Friut {
+        float: right;
+        width: 44.8%;
+      }
+      #Vegitable{
+         float:left;
+         width:45%;
+      }
+      #Rice{
+         /* float:left; */
+         clear:left;
+         width:95%;
+      }
+
+      .items {
+         border: 3px solid rgb(17, 0, 128);
+         background-color: #7ec742;
+         margin: 20px;
+         padding: 12px 15px;
+          
+      }
+      p,h3{
+         /* text-align: center; */
+         text-align: justify;
+      }
+      h1{
+         margin: auto;
+         width:500px;
+      }
+   </style>
+</head>
+
+<body>
+   <div class="container">
+        <h1>Welcome!</h1>
+      <div id="Friut" class="items">
+         <h3>Friut</h3>
+         <p id="fruitpara" class="item">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus ducimus
+            blanditiis officia atque totam nam doloremque voluptate est architecto incidunt eveniet ipsa, aut reiciendis
+            ab veritatis asperiores nobis ex corporis.</p>
+      </div>
+      <div id="Vegitable" class="items">
+         <h3>Vegitable</h3>
+         <p id="vegitablepara" class="item">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus ducimus
+            blanditiis officia atque totam nam doloremque voluptate est architecto incidunt eveniet ipsa, aut reiciendis
+            ab veritatis asperiores nobis ex corporis.</p>
+      </div>
+      <div id="Rice" class="items">
+         <h3>Rice</h3>
+         <p id="Ricepara" class="item">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus ducimus
+            blanditiis officia atque totam nam doloremque voluptate est architecto incidunt eveniet ipsa, aut reiciendis
+            ab veritatis asperiores nobis ex corporis.</p>
+      </div>
+   </div>
+</body>
+
+</html>
