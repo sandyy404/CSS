@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Before and after Selector</title>
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+      rel="stylesheet">
+   <style>
+      /* body {
+         background-color: #1d1b1b;
+         color: rgb(236, 15, 133);
+         margin: 0px;
+         padding: 0px;
+           width:100%;
+         height:100%;
+         
+         background-image: url(https://images.unsplash.com/photo-1731569348001-e49c36947289?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+        background-repeat: no-repeat;
+        background-size:cover ;
+        
+        /* background-position: center; 
+      } */
+         
+      body {
+  background-color: #1d1b1b;
+  color: rgb(15, 225, 236);
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("https://images.unsplash.com/photo-1731569348001-e49c36947289?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  opacity: 0.2;   /* 👈 Sirf image transparent hogi */
+  z-index: -1;    /* Peeche rahegi */
+}
+      /* header::before {
+         background-image: url(https://images.unsplash.com/photo-1731432245325-d820144afe4a?q=80&w=1171&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+         
+         content:"";
+         position:absolute;
+         top:0px;
+         left:0px;
+         width:100%;
+         height:100px;
+         z-index:-1;
+       opacity:0.5;
+      } */
+
+      
+         .navigationbar {
+            display: flex;
+            /* flex-direction: column; */
+            list-style: none;
+            font-family: "Playfair Display", serif;
+         }
+
+         li {
+            padding: 20px 25px;
+            /* margin: -9px 177px; */
+         }
+
+         section {
+            height: 300px;
+            /* border:2px solid red; */
+            margin: -25px -3px;
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+         }
+
+         section::before {
+
+            content: "Hello, This is made by me."
+
+         }
+
+         section::after {
+            content: "This is my last line"
+         }
+
+         h1 {
+            font-size: 2rem;
+         }
+
+         p {
+            font-family: "Playfair Display", serif;
+            text-align: center;
+         }
+   </style>
+</head>
+
+<body>
+   <header>
+      <nav class="navbar">
+         <ul class="navigationbar">
+            <li class="item">Home</li>
+            <li class="item">About</li>
+            <li class="item">Service</li>
+            <li class="item">Contact us</li>
+         </ul>
+      </nav>
+
+   </header>
+   <section>
+      <br>
+      <h1>Hi this is coding platform.</h1>
+      <p>
+         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius maiores blanditiis tempora labore enim. Harum
+         est molestias ex placeat dicta optio, sed ratione, vitae nihil illum impedit facilis ipsam voluptatem?
+         Rem enim et delectus ducimus libero eligendi non qui officia adipisci, nesciunt dolorum ipsum illo labore
+         dolorem quis suscipit magni accusamus autem dignissimos aspernatur quisquam. Quam quae neque ea minima.
+      </p>
+   </section>
+   
+</body>
+
+</html>

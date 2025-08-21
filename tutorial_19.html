@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Psedo Selector</title>
+   <style>
+      input{
+         display: block;
+         margin:3px;
+      }
+      input[type='text']{
+         background-color: #0ccfbf;
+         /* color: black; */
+         /* border:3px solid red; */
+
+      }
+      input[type='password']{
+         background-color: #1ad02f;
+      }
+      input[type='submit']{
+         background-color: #952d9a;
+      }
+      a[target]{
+         text-decoration: none;
+         color:#952d9a;
+        font-size: 50px;
+      }
+      a[target='_self']{
+ text-decoration: none;
+         color:#10aef3;
+        font-size: 50px;
+      }
+       a[target='_top']{
+ text-decoration: none;
+         color:#6b10f3;
+        font-size: 50px;
+      } a[target='_parent']{
+ text-decoration: none;
+         color:#f38510;
+        font-size: 50px;
+      }
+      li:nth-child(2){
+         color:#f38510;
+      }
+      li:nth-child(2n+1){
+         color:chartreuse;
+      }
+      li:nth-child(odd){
+         background-color: #320e0e;
+      }
+      li:nth-child(even){
+         background-color: #10abe8;
+      }
+   </style>
+</head>
+<body>
+   <!-- <div class="container"> -->
+      <h1>
+         <a href="http://google.com" target="_blank">go to google from here</a> <!-- Current page open rehta hai, link alag open hota hai (New tab/window me open karta hai) -->
+         <br>
+          <a href="http://twitter.com" target="_self">go to twitter from here</a><!--Current page replace ho jata hai(Same tab/window me open karta hai)-->
+           <br>
+          <a href="http://instagram.com" target="_top">go to instagram from here</a><!--Agar frames hain to unse bahar nikal ke full window me load hota hai(Pure browser window me open karta hai)-->
+           <br>
+          <a href="http://facebook.com" target="_parent">go to facebook from here</a><!--Frameset use hone par parent page replace hota hai(Parent frame me open karta hai	)-->
+          
+      </h1>
+      <form action="" class="form-control">
+         <input type="text" placeholder="Enter the name">
+         <input type="password" placeholder="Enter your password">
+         <input type="submit" value="Submit">
+      </form>
+      <ul>
+      <li class="item" id="item1">item1</li>
+      <li class="item" id="item2">item2</li>
+      <li class="item" id="item3">item3</li>
+      <li class="item" id="item4">item4</li>
+      <li class="item" id="item5">item5</li>
+      </ul>
+   </div>
+</body>
+</html>

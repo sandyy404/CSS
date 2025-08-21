@@ -1,11 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Document</title>
+   <title>Media Queries</title>
+   <style>
+.box{
+   background-color: #a41414;
+   font-size: 50px;
+   color: white;
+   text-align: center;
+   display: none;
+}
+@media (max-width:200px){
+   #box1{
+      display: block;
+      background-color: #481f7a;
+      color:aqua;
+
+   }
+}
+
+@media (min-width:200px) and (max-width:500px){
+   #box2{
+     display: block;
+      background-color: #1f7a56;
+      color:rgb(13, 14, 14);
+
+   }
+}
+@media (min-width:500px) and (max-width:800px){
+   #box3{
+           display: block;
+      background-color: #65c411;
+      color:rgb(4, 25, 128);
+
+   }
+}
+@media (min-width:800px) and (max-width:900px){
+   #box4{
+           display: block;
+      background-color: #f56b08;
+      color:rgb(19, 78, 78);
+
+   }
+}
+   </style>
 </head>
+
 <body>
-   
+   <div class="box" id="box1">This is my first box</div>
+   <div class="box" id="box2">This is my second box</div>
+   <div class="box" id="box3">This is my third box</div>
+   <div class="box" id="box4">This is my fourth box</div>
+
 </body>
+
 </html>

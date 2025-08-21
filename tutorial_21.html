@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Box shadow and text shadow</title>
+   <style>
+      
+      .container{
+         display:flex;
+
+      }
+   .card{
+      /* color:white; */
+      padding:23px 24px;
+      margin:2px 25px;
+      /* border:2px solid red;  */
+      background-color: #9e6a6a;
+      /* box-shadow: 7px 9px 20px rgb(147, 211, 67); */
+      /* box-shadow: -4px -5px rgb(147, 211, 67);   for upper and left side  */
+      /* box-shadow: 7px 9px 20px rgb(147, 211, 67);third is blur radius */
+      /* box-shadow: 7px 9px 20px 20px  rgba(8, 216, 161, 0.5); */
+      /* box-shadow: 7px 9px 20px 10px rgb(147, 211, 67);fourth is spread radius */
+      box-shadow: inset 260px 1px rgb(124, 123, 169);
+   }
+   .card h1{
+      color:white;
+      text-shadow:3px 2px 5px rgb(234, 46, 4);
+   }
+   .card h2{
+      color:white;
+      text-shadow:3px 2px 5px green;
+   }
+   .card h3{
+      color:white;
+      text-shadow:3px 2px 5px darkgoldenrod;
+   }
+   </style>
+</head>
+<body>
+   <div class="container">
+      <div class="card" id="card-1">
+         <h1>card1</h1>
+         <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur soluta, nulla debitis quas doloribus at. Accusantium, ratione voluptatum amet obcaecati voluptates neque nisi modi exercitationem optio doloribus! Commodi, ex libero.
+            In voluptates, accusamus quaerat delectus impedit assumenda debitis. Iure vitae minus quam illo asperiores cupiditate iusto nobis libero ipsam, officia, eos laborum numquam quod corrupti praesentium voluptatibus neque voluptate sed.
+         </p>
+      </div>
+      <div class="card" id="card-2">
+         <h2>card2</h2>
+         <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Excepturi sint iusto commodi nihil corrupti maxime. Ratione iure magnam, ullam nemo natus aliquid assumenda. Dolorem amet accusamus repudiandae dicta quis et.
+            Dolore, eligendi. Provident corporis dicta illo quasi officiis quidem eius, obcaecati corrupti laboriosam nemo rem laborum aliquid eos rerum! Accusantium sunt minus est sit culpa quos nam perferendis reprehenderit alias.
+         </p>
+      </div>
+      <div class="card" id="card-3">
+         <h3>card3</h3>
+         <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam iure aperiam ipsam ipsum repellendus cupiditate similique, quo expedita, pariatur earum voluptates iusto perspiciatis facere? Sunt deleniti ipsam illo tempore ea.
+            Suscipit voluptatem, error vero ullam veritatis repellendus cum dolores quas? Iure harum doloribus temporibus eligendi, eum est quis nulla sit qui excepturi vitae cupiditate in a quo! Veritatis, sapiente at!
+         </p>
+      </div>
+
+   </div>
+</body>
+</html>
