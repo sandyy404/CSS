@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Grid</title>
+   <style>
+      .container{
+         
+         background-color: #0f0f0f;
+         display: grid;
+         grid-template-columns: 200px 300px 200px;
+         /* grid-template-columns: 200px auto 200px; */
+         /* grid-template-columns: 1fr 1fr 3fr; */
+         grid-template-columns: repeat(4,auto);
+         grid-gap: 2rem;
+      }
+      .item{
+         /* width:100px;
+         height:100px; */
+         padding:7px;
+         margin:6px;
+         border: 3px solid white;
+         background-color: #602f2f;
+      }
+   </style>
+</head>
+<body>
+   <div class="container">
+      <div class="item">This is item-1</div>
+      <div class="item">This is item-2</div>
+      <div class="item">This is item-3</div>
+      <div class="item">This is item-4</div>
+      <div class="item">This is item-5</div>
+      <div class="item">This is item-6</div>
+      <div class="item">This is item-7</div>
+      <div class="item">This is item-8</div>
+      <div class="item">This is item-9</div>
+      <div class="item">This is item-10</div>
+      <div class="item">This is item-11</div>
+      <div class="item">This is item-12</div>
+      <div class="item">This is item-13</div>
+      <div class="item">This is item-14</div>
+      <div class="item">This is item-15</div>
+      <div class="item">This is item-16</div>
+   </div>
+</body>
+</html>

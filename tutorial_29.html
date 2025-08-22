@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Spanning in Grid</title>
+   <style>
+      .container{
+         display:grid;
+         grid-template-columns: repeat(4,auto);
+         grid-template-rows: 2fr 3fr 4fr;
+         grid-row-gap: 2rem;
+         grid-column-gap: 1rem;
+      }
+      .box{
+         
+         padding:3px;
+         background-color: #744848;
+         border: 3px solid gold;
+         color: rgb(11, 11, 11);
+      }
+      .box:first-child{
+       /* grid-column-start: 1;
+       grid-column-end:3;
+       grid-row-start: 1;
+       grid-row-end: 3; */
+       grid-column: 1/ span 2;
+       grid-row: 1/ span 2;
+      }
+   </style>
+</head>
+<body>
+   <div class="container">
+      <div class="box">item-1</div>
+      <div class="box">item-2</div>
+      <div class="box">item-3</div>
+      <div class="box">item-4</div>
+      <div class="box">item-5</div>
+      <div class="box">item-6</div>
+      <div class="box">item-7</div>
+      <div class="box">item-8</div>
+      <div class="box">item-9</div>
+      <div class="box">item-10</div>
+      <div class="box">item-11</div>
+      <div class="box">item-12</div>
+   </div>
+</body>
+</html>

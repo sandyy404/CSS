@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Autofit and Min max</title>
+   <style>
+      .container{
+         display:grid;
+         /* grid-template-column:3fr 3fr 3fr; */
+         grid-template-columns:repeat(auto-fit,minmax(400px,2fr));
+         grid-gap:1rem;
+      }
+      .box{
+         padding:10px;
+         background-color: #7b6060;
+         border: 3px solid gold;
+      }
+      
+   </style>
+</head>
+<body>
+   <div class="container">
+      <div class="box">item-1</div>
+      <div class="box">item-2</div>
+      <div class="box">item-3</div>
+      <div class="box">item-4</div>
+      <div class="box">item-5</div>
+      <div class="box">item-6</div>
+      <div class="box">item-7</div>
+      <div class="box">item-8</div>
+      <div class="box">item-9</div>
+      <div class="box">item-10</div>
+      <div class="box">item-11</div>
+      <div class="box">item-12</div>
+      <div class="box">item-13</div>
+      <div class="box">item-14</div>
+      <div class="box">item-15</div>
+      <div class="box">item-16</div>
+      <div class="box">item-17</div>
+      <div class="box">item-18</div>
+   </div>
+</body>
+</html>

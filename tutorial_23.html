@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Animation Creation Keyframes</title>
+   <style>
+      .container {
+         background-color: #c6d12e;
+         /* width: 500px;*/
+         /* height: 1000px;  */
+      }
+
+      .box {
+         background-color: #b32222;
+         width: 300px;
+         height: 300px;
+         position: relative;
+         animation-name: happy;
+         /* animation-name: sandy; */
+         animation-iteration-count: infinite;
+         animation-duration: 6s;
+         /* animation-timing-function: ease-out; */
+         /* animation-delay: 1s; */
+         /* animation-fill-mode: alternate; */
+         /* animation-direction: reverse; */
+         /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+      }
+
+      @keyframes happy {
+         0% {
+            top: 0px;
+            left: 0px;
+         }
+
+         25% {
+            top: 300px;
+            left: 0px;
+         }
+
+         /* 50% {
+            top: 200px;
+            left: 0px;
+         } */
+
+         75% {
+            top: 300px;
+            left: 300px;
+         }
+
+         100% {
+            top: 0px;
+            left: 300px;
+         }
+      }
+
+      @keyframes sandy {
+         from {
+            width: 200px;
+            /* height: 100px; */
+         }
+
+         to {
+            width: 500px;
+            /* height: 300px; */
+         }
+      }
+   </style>
+</head>
+
+<body>
+   <div class="container">
+      <div class="box">
+         This is my first animation
+      </div>
+   </div>
+</body>
+
+</html>
