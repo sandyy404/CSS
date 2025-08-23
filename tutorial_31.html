@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Cerating Layout using grid</title>
+   <style>
+      .container {
+         display: grid;
+         grid-gap: 2rem;
+         grid-template-areas:
+            'navbar navbar navbar navbar'
+            'section section section aside'
+            'footer footer footer footer';
+      }
+      .item{
+         background-color: black;
+         border-radius:5px;
+         border:3px solid rgb(114, 46, 46);
+         color:white;
+         padding:15px 25px;
+      }
+      #navbar{
+         
+         grid-area:navbar;
+      }
+      #section{
+         grid-area:section;
+      }
+      #aside{
+         grid-area:aside;
+      }
+      footer{
+         grid-area:footer;
+      }
+   </style>
+</head>
+
+<body>
+   <div class="container">
+      <div id="navbar" class="item">
+        Home About Service Contact-us
+      </div>
+      <div id="section" class="item">
+         Lorem ipsum dolor sit amet consectetur, adipisicing elit. At, dignissimos totam! Eveniet facere esse odio
+         doloribus similique ad animi provident, accusamus amet. Eum, delectus ullam? In, hic. Repellendus, dolorem
+         quasi.
+         Ad laudantium officia provident suscipit earum, optio sed et ex sit perspiciatis doloribus eveniet illo porro.
+         Ipsa labore ea, asperiores, commodi explicabo maiores placeat optio, quibusdam quasi debitis corporis minima!
+         Molestiae accusantium hic sed sequi facilis error a harum soluta alias temporibus cumque quod quo odio aperiam,
+         nostrum accusamus animi sunt. Ipsa magnam ipsum at, in soluta tempora. Facilis, adipisci?
+         Fugit a tenetur laboriosam voluptas, nesciunt excepturi nemo assumenda quae corrupti! Perspiciatis ratione
+         dignissimos qui laboriosam quo quam quia ipsa odio hic officia fugiat illum saepe recusandae architecto, ex
+         exercitationem?
+         Commodi harum, voluptatibus ad vitae, quasi itiaque quae quos hic ducimus provident animi. Qui reiciendis
+         deleniti repudiandae autem temporibus, quo sapiente harum praesentium dolorum deserunt inventore laborum alias.
+         Ad, incidunt?
+      </div>
+      <div id="aside" class="item">
+         Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, fuga. Cupiditate, officia. Molestias nemo
+         facere laboriosam totam officia sit quae nostrum dicta qui eum laborum obcaecati porro, in autem minima?
+         Voluptatem repudiandae inventore odio totam, soluta voluptas, incidunt dolore fugit, quod modi similique ex aut
+         adipisci delectus nesciunt? Ullam cupiditate laboriosam minus eaque fuga reiciendis quam dignissimos dolorem
+         voluptas error?
+         Voluptatum, sunt? Ratione, possimus ducimus itaque explicabo in aliquam nobis placeat, quis ab a, repudiandae
+         fuga porro deleniti dolores animi quasi adipisci. Esse repellendus natus sint earum nisi odio accusamus.
+         Culpa ea distinctio, error doloremque ipsam at necessitatibus debitis officia laboriosam, maiores quasi velit
+         laudantium qui. Voluptate molestias numquam necessitatibus sequi nostrum tempore praesentium maiores omnis,
+         perferendis accusantium alias quasi.
+         Laboriosam optio commodi assumenda harum, soluta, corporis tenetur, quibusdam quas aperiam mollitia quisquam
+         doloremque ipsam blanditiis nostrum praesentium ducimus? Quaerat aliquid quia atque fugit. Voluptas aut ipsam
+         sequi! Laudantium, quos.
+      </div>
+      <footer class="item">
+         This is a footer.
+      </footer>
+   </div>
+</body>
+
+</html>
